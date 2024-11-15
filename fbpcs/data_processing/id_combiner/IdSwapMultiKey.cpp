@@ -7,13 +7,10 @@
 
 #include "IdSwapMultiKey.h"
 #include "DataPreparationHelpers.h"
-#include "folly/Optional.h"
 
 #include <algorithm>
 #include <cstdint>
-#include <filesystem>
 #include <fstream>
-#include <iomanip>
 #include <istream>
 #include <numeric>
 #include <ostream>

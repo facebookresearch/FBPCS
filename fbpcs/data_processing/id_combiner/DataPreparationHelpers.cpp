@@ -9,14 +9,11 @@
 
 #include <folly/logging/xlog.h>
 #include <cstdint>
-#include <filesystem>
-#include <iomanip>
 #include <istream>
 #include <ostream>
 #include <sstream>
 #include <stdexcept>
 #include <string>
-#include <unordered_map>
 #include <vector>
 
 #include <re2/re2.h>

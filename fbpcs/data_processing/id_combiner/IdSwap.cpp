@@ -7,11 +7,8 @@
 
 #include "IdSwap.h"
 #include "DataPreparationHelpers.h"
-#include "folly/Optional.h"
 
-#include <filesystem>
 #include <fstream>
-#include <iomanip>
 #include <istream>
 #include <ostream>
 #include <sstream>
