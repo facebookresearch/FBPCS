@@ -11,14 +11,12 @@
 #include <istream>
 #include <stdexcept>
 #include <string>
-#include <unordered_map>
 #include <vector>
 
 #include <boost/algorithm/string.hpp>
 #include <folly/Conv.h>
 #include <folly/String.h>
 #include <folly/logging/xlog.h>
-#include <re2/re2.h>
 
 #include "DataPreparationHelpers.h"
 

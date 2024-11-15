@@ -10,9 +10,7 @@
 #include <iomanip>
 #include <istream>
 #include <ostream>
-#include <stdexcept>
 #include <string>
-#include <unordered_map>
 #include <vector>
 
 #include <boost/algorithm/string.hpp>

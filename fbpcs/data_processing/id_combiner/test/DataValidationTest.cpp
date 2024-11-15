@@ -14,7 +14,6 @@
 #include <fstream>
 
 #include <folly/Conv.h>
-#include <gflags/gflags.h>
 #include <gtest/gtest.h>
 
 using namespace ::pid::combiner;
