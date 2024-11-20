@@ -159,7 +159,6 @@ async def run_study_async(
     bolt_hooks: Optional[Dict[BoltHookKey, List[BoltHook[BoltHookArgs]]]] = None,
     stage_timeout_override: Optional[int] = None,
 ) -> BoltSummary:
-
     # Create a GraphApiTraceLoggingService specific for this study_id
     client: BoltGraphAPIClient[BoltPLGraphAPICreateInstanceArgs] = BoltGraphAPIClient(
         config=config,
@@ -367,7 +366,6 @@ async def _validate_access_to_instance(
     instance_id: str,
     run_id: str,
 ) -> None:
-
     tries = 0
     while tries < CREATE_INSTANCE_TRIES:
         tries += 1
@@ -834,14 +832,14 @@ async def _create_new_instances(
         for objective_id in cell_obj_instances[cell_id]:
             # Create new instance for cell_obj pairs which has no valid instance.
             if "instance_id" not in cell_obj_instances[cell_id][objective_id]:
-                cell_obj_instances[cell_id][objective_id]["instance_id"] = (
-                    await _create_instance_retry(
-                        client, study_id, cell_id, objective_id, run_id, logger
-                    )
-                )
                 cell_obj_instances[cell_id][objective_id][
-                    STATUS
-                ] = PrivateComputationInstanceStatus.CREATED.value
+                    "instance_id"
+                ] = await _create_instance_retry(
+                    client, study_id, cell_id, objective_id, run_id, logger
+                )
+                cell_obj_instances[cell_id][objective_id][STATUS] = (
+                    PrivateComputationInstanceStatus.CREATED.value
+                )
 
             instance_id = cell_obj_instances[cell_id][objective_id]["instance_id"]
             is_pl_timestamp_validation_enabled = await client.has_feature(
@@ -902,7 +900,7 @@ async def _create_instance_retry(
 
 @bolt_checkpoint(dump_return_val=True, component=LOG_COMPONENT)
 def _instance_to_input_path(
-    cell_obj_instance: Dict[str, Dict[str, Dict[str, Any]]]
+    cell_obj_instance: Dict[str, Dict[str, Dict[str, Any]]],
 ) -> Dict[str, Dict[str, str]]:
     instance_input_path = {}
     for cell_id in cell_obj_instance:

@@ -542,7 +542,6 @@ def _get_trace_logging_service(
     client: BoltGraphAPIClient,
     study_id_or_dataset_id: Optional[str],
 ) -> Optional[TraceLoggingService]:
-
     if study_id_or_dataset_id is None:
         return None
 

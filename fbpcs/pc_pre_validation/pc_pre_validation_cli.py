@@ -29,7 +29,6 @@ Usage:
         [--tee-local-file-path=<local-file-path>]
 """
 
-
 from typing import cast, List, Optional as OptionalType
 
 from docopt import docopt

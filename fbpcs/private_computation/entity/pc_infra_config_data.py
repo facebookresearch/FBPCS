@@ -17,7 +17,6 @@ class PrivateComputationInfraConfigData:
 
 
 class PrivateComputationInfraConfigInfo(Enum):
-
     CONTAINER_SERVICE = PrivateComputationInfraConfigData(
         "fbpcp.service.container_aws.AWSContainerService",
         {"region", "cluster", "subnets"},

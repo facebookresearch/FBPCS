@@ -223,7 +223,6 @@ class TestPlStudyRunner(TestCase):
 
     @patch("time.time", new=MagicMock(return_value=1665458111.3078792))
     def test_get_runnable_objectives(self) -> None:
-
         study_data = {
             "type": "LIFT",
             "start_time": "2022-10-03T07:00:00+0000",
@@ -483,9 +482,9 @@ class TestPlStudyRunner(TestCase):
         with self.subTest("invalid_objective_id"):
             try:
                 print(invalid_study_data_dict)
-                invalid_study_data_dict["objectives"]["data"][0][
-                    "id"
-                ] = "invalid_objective_id"
+                invalid_study_data_dict["objectives"]["data"][0]["id"] = (
+                    "invalid_objective_id"
+                )
                 self.response_mock.text = json.dumps(invalid_study_data_dict)
                 self.client_mock.get_study_data.return_value = self.response_mock
                 self._validate_error(

@@ -397,7 +397,6 @@ class TestSecureRandomShardingStageService(IsolatedAsyncioTestCase):
     def _create_pc_instance(
         self, pcs_features: Optional[Set[PCSFeature]] = None
     ) -> PrivateComputationInstance:
-
         infra_config: InfraConfig = InfraConfig(
             instance_id="test_instance_123",
             role=PrivateComputationRole.PARTNER,

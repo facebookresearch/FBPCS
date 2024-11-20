@@ -291,7 +291,6 @@ class TestAwsCloud(unittest.TestCase):
             )
 
     def test_get_kinesis_firehose_streams(self) -> None:
-
         kinesis_firehose_stream_name = "test_stream"
         mock_return = {"stream_name": kinesis_firehose_stream_name}
         self.aws_container_logs.kinesis_client.describe_delivery_stream.return_value = (
@@ -377,9 +376,7 @@ class TestAwsCloud(unittest.TestCase):
             mock_streams = []
             mock_response = {"logStreams": mock_streams}
             self.aws_container_logs.cloudwatch_client.describe_log_streams.reset_mock()
-            self.aws_container_logs.cloudwatch_client.describe_log_streams.return_value = (
-                mock_response
-            )
+            self.aws_container_logs.cloudwatch_client.describe_log_streams.return_value = mock_response
             expected = ""
             self.assertEqual(
                 expected,
@@ -391,9 +388,7 @@ class TestAwsCloud(unittest.TestCase):
         with self.subTest("EmptyResponse"):
             mock_response = {}
             self.aws_container_logs.cloudwatch_client.describe_log_streams.reset_mock()
-            self.aws_container_logs.cloudwatch_client.describe_log_streams.return_value = (
-                mock_response
-            )
+            self.aws_container_logs.cloudwatch_client.describe_log_streams.return_value = mock_response
             expected = ""
             self.assertEqual(
                 expected,

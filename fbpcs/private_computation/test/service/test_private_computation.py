@@ -1486,7 +1486,6 @@ class TestPrivateComputationService(unittest.IsolatedAsyncioTestCase):
 
 class TestTransformFilePath(unittest.TestCase):
     def test_virtual_hosted_format(self) -> None:
-
         test_cases = [
             "https://bucket-name.s3.Region.amazonaws.com/key-name",
             "https://fbpcs-github-e2e.s3.us-west-2.amazonaws.com/lift/results/partner_expected_result.json",
@@ -1504,7 +1503,6 @@ class TestTransformFilePath(unittest.TestCase):
             self.assertEqual(transform_file_path(x), y)
 
     def test_s3_format(self) -> None:
-
         test_cases = [
             "S3://bucket-name/key-name",
             "s3://bucket-name/key-name",
@@ -1522,7 +1520,6 @@ class TestTransformFilePath(unittest.TestCase):
             self.assertEqual(transform_file_path(x, "Region"), y)
 
     def test_path_format(self) -> None:
-
         test_cases = [
             "https://s3.Region.amazonaws.com/bucket-name/key-name",
             "https://s3.us-west-2.amazonaws.com/fbpcs-github-e2e/lift/results/partner_expected_result.json",
@@ -1538,7 +1535,6 @@ class TestTransformFilePath(unittest.TestCase):
             self.assertEqual(transform_file_path(x), y)
 
     def test_bad_inputs(self) -> None:
-
         test_cases = [
             "",
             "www.facebook.com",

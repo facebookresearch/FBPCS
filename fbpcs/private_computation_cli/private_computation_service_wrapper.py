@@ -162,7 +162,6 @@ def run_next(
     logger: logging.Logger,
     server_ips: Optional[List[str]] = None,
 ) -> None:
-
     pc_service = build_private_computation_service(
         config["private_computation"],
         config["mpc"],
@@ -189,7 +188,6 @@ def run_stage(
     server_ips: Optional[List[str]] = None,
     dry_run: bool = False,
 ) -> None:
-
     pc_service = build_private_computation_service(
         config["private_computation"],
         config["mpc"],
@@ -361,7 +359,7 @@ def get_tier(config: Dict[str, Any]) -> PCSTier:
 
 
 def _try_build_log_retriever(
-    log_retriever_config: Dict[str, Any]
+    log_retriever_config: Dict[str, Any],
 ) -> Optional[LogRetriever]:
     if log_retriever_config:
         return reflect.get_instance(log_retriever_config, LogRetriever)
@@ -507,19 +505,19 @@ def build_private_computation_service(
 
 
 def _build_onedocker_service_cfg(
-    onedocker_service_config: Dict[str, Any]
+    onedocker_service_config: Dict[str, Any],
 ) -> OneDockerServiceConfig:
     return OneDockerServiceConfig(**onedocker_service_config["constructor"])
 
 
 def _build_onedocker_binary_cfg(
-    onedocker_binary_config: Dict[str, Any]
+    onedocker_binary_config: Dict[str, Any],
 ) -> OneDockerBinaryConfig:
     return OneDockerBinaryConfig(**onedocker_binary_config["constructor"])
 
 
 def _build_onedocker_binary_cfg_map(
-    onedocker_binary_configs: Dict[str, Dict[str, Any]]
+    onedocker_binary_configs: Dict[str, Dict[str, Any]],
 ) -> DefaultDict[str, OneDockerBinaryConfig]:
     onedocker_binary_cfg_map = defaultdict(
         lambda: _build_onedocker_binary_cfg(onedocker_binary_configs["default"])

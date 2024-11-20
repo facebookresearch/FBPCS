@@ -45,7 +45,6 @@ class PIDRunProtocolBinaryService(RunBinaryBaseService):
         metric_path: Optional[str] = None,
         run_id: Optional[str] = None,
     ) -> str:
-
         cmd_ls = []
 
         if server_endpoint:

@@ -13,7 +13,6 @@ from requests import Response
 
 
 def get_access_token(hostname: str, client_id: str, client_secret: str) -> str:
-
     url = f"https://{hostname}/clients/token"
 
     payload = f"client_id={client_id}&client_secret={client_secret}&grant_type=client_credentials"

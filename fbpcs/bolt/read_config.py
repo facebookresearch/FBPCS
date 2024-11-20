@@ -23,11 +23,12 @@ from fbpcs.private_computation_cli.private_computation_service_wrapper import (
 from fbpcs.utils.config_yaml.config_yaml_dict import ConfigYamlDict
 
 
-def parse_bolt_config(config: Dict[str, Any], logger: logging.Logger) -> Tuple[
+def parse_bolt_config(
+    config: Dict[str, Any], logger: logging.Logger
+) -> Tuple[
     BoltRunner[BoltPCSCreateInstanceArgs, BoltPCSCreateInstanceArgs],
     List[BoltJob[BoltPCSCreateInstanceArgs, BoltPCSCreateInstanceArgs]],
 ]:
-
     # create runner
     runner_config = config["runner"]
     runner = create_bolt_runner(runner_config=runner_config, logger=logger)
@@ -79,7 +80,7 @@ def create_bolt_runner(
 
 
 def create_job_list(
-    job_config_list: Dict[str, Any]
+    job_config_list: Dict[str, Any],
 ) -> List[BoltJob[BoltPCSCreateInstanceArgs, BoltPCSCreateInstanceArgs]]:
     bolt_job_list = []
     for job_name, job_config in job_config_list.items():
