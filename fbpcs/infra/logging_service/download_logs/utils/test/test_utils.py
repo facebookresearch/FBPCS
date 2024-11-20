@@ -17,7 +17,6 @@ class TestUtils(unittest.TestCase):
         self.utils = Utils()
 
     def test_create_file(self) -> None:
-
         fake_file_path = "fake/file/path"
         content_list = ["This is test string"]
         with patch(

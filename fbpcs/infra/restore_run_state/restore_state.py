@@ -79,7 +79,6 @@ class RestoreRunState:
         self.logger.info(f"Downloaded run state to {dest_folder}")
 
     def _copy_files(self, run_data_path: str, dest_folder: str) -> None:
-
         # DataPath is like s3://fb-pc-data-nov07test1-vwxz/query-results/fbpcs_instances_638479584559395_1/
         splits = self._split_path(run_data_path)
         if splits is None:

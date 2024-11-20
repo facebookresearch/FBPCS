@@ -58,7 +58,6 @@ class TestStageStateInstance(unittest.TestCase):
                 "Subtest with container_stoppable: {container_stoppable}",
                 container_stoppable=container_stoppable,
             ):
-
                 mock_onedocker_svc.reset_mock()
                 if container_stoppable:
                     mock_onedocker_svc.stop_containers = MagicMock(

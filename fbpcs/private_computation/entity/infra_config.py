@@ -14,7 +14,6 @@ from dataclasses_json import config, dataclass_json, DataClassJsonMixin
 
 # this import statument can avoid circular import
 if TYPE_CHECKING:
-
     from fbpcs.private_computation.stage_flows.private_computation_base_stage_flow import (
         PrivateComputationBaseStageFlow,
     )

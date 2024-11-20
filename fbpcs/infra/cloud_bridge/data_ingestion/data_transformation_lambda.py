@@ -58,7 +58,6 @@ def lambda_handler(
     output = []
     ##### NOTE: this script assume the schema is correct, no missing items
     for record in event["records"]:
-
         row = {}
         recordId = record["recordId"]
         row["recordId"] = recordId

@@ -11,7 +11,6 @@ from enum import Enum
 
 
 class PCSFeature(Enum):
-
     PCS_DUMMY = "pcs_dummy_feature"
     PRIVATE_LIFT_PCF2_RELEASE = "private_lift_pcf2_release"
     PC_COORDINATED_RETRY = "private_computation_coordinated_retry"

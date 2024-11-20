@@ -58,7 +58,6 @@ class TestIdSpineCombinerStageService(IsolatedAsyncioTestCase):
         self.container_permission_id = "test-container-permission"
 
     async def test_id_spine_combiner(self) -> None:
-
         for test_run_id, test_log_cost_bucket in (
             (None, "test-log-bucket"),
             ("2621fda2-0eca-11ed-861d-0242ac120002", "test-log-bucket"),

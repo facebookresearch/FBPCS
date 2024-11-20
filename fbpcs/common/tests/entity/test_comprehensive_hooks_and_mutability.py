@@ -310,7 +310,6 @@ class TestUpdateOtherFieldHook(unittest.TestCase):
                     setattr(intance_base_obj, test_field, change_vals)
 
     def _init_event_hook(self) -> None:
-
         ##########################
         # update hooks: initialize name when id is initialized, they are both immutable
         #               initialize org when user is initialized, they are both immutable
@@ -356,7 +355,6 @@ class TestUpdateOtherFieldHook(unittest.TestCase):
             )
 
     def _update_event_hook(self) -> None:
-
         ##########################
         # update hooks: update output_path and storage when input_path is changed
         ##########################
@@ -423,7 +421,6 @@ class TestUpdateOtherFieldHook(unittest.TestCase):
         self.assertEqual(self.obj_1.highest_pressure, 70)
 
     def _delete_event_hook(self) -> None:
-
         ##########################
         # frozen hooks: frozen location when region is deleted
         ##########################

@@ -19,7 +19,6 @@ from fbpcs.infra.cloud_bridge.deployment_helper.aws.policy_params import PolicyP
 
 
 class AwsDeploymentHelper:
-
     # policy_arn is fixed string. So defining it as a macro.
     POLICY_ARN = "arn:aws:iam::{}:policy/{}"
     IAM_POLICIES_DIRECTORY = "iam_policies"
@@ -282,7 +281,6 @@ class AwsDeploymentHelper:
     def read_json_file(
         self, file_name: str, policy_params: PolicyParams, read_mode: str = "r"
     ) -> Dict[str, Any]:
-
         # this can be replaced with a json file which is written in deploy.sh
         interpolation_data = {
             "REGION": self.region,
@@ -326,7 +324,6 @@ class AwsDeploymentHelper:
         return json_data
 
     def create_user_workflow(self, user_name: str) -> None:
-
         self.log.info(
             f"""Cli to create user is triggered. Following actions will be performed
         1. User {user_name} will be created

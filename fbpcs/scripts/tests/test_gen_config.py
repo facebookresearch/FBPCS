@@ -14,7 +14,6 @@ from fbpcs.scripts import gen_config
 
 class TestGenConfig(unittest.TestCase):
     def test_prompt(self) -> None:
-
         # Test if Valid replacement exists and --accept_all passed - we use existing
         res = gen_config.prompt("key", replacements={"key": "baz"}, accept_all=True)
         self.assertEqual(res, "baz")

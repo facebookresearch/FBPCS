@@ -98,7 +98,6 @@ def transform_file_path(file_path: str, aws_region: Optional[str] = None) -> str
         rf"https://[sS]3\.{region_regex_pattern}+\.amazonaws\.com/{bucket_name_regex_pattern}+/{key_pattern}+",
         file_path,
     ):
-
         # Extract Bucket, Key, and Region
         key_name_search = re.search(
             rf"https://[sS]3\.{region_regex_pattern}+\.amazonaws\.com/{bucket_name_regex_pattern}+/",
@@ -131,9 +130,7 @@ def transform_file_path(file_path: str, aws_region: Optional[str] = None) -> str
 
     # Check if it matches the s3 style access format, s3://bucket-name/key-name
     if re.search(rf"[sS]3://{bucket_name_regex_pattern}+/{key_pattern}+", file_path):
-
         if aws_region is not None:
-
             # Extract Bucket, Key
             bucket_name_search = re.search(r"[sS]3://", file_path)
             key_name_search = re.search(
@@ -144,7 +141,6 @@ def transform_file_path(file_path: str, aws_region: Optional[str] = None) -> str
 
             # Check for not None rather than extracting on search, to keep pyre happy
             if key_name_search and bucket_name_search:
-
                 bucket = file_path[
                     bucket_name_search.span()[1] : key_name_search.span()[1] - 1
                 ]
@@ -289,7 +285,6 @@ def generate_env_vars_dicts_list(
     server_hostnames: Optional[List[str]] = None,
     server_private_key_ref_provider: Optional[PrivateKeyReferenceProvider] = None,
 ) -> List[Dict[str, str]]:
-
     _validate_env_vars_length(
         num_containers=num_containers,
         server_ip_addresses=server_ip_addresses,

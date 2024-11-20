@@ -88,12 +88,12 @@ class GraphApiTraceLoggingService(TraceLoggingService):
                     continue
 
                 aggregate_msg["component"] += f"{AGGREGATE_DELIMITER}{msg['component']}"
-                aggregate_msg[
-                    "checkpoint_name"
-                ] += f"{AGGREGATE_DELIMITER}{msg['checkpoint_name']}"
-                aggregate_msg[
-                    "checkpoint_data"
-                ] += f"{AGGREGATE_DELIMITER}{msg['checkpoint_data']}"
+                aggregate_msg["checkpoint_name"] += (
+                    f"{AGGREGATE_DELIMITER}{msg['checkpoint_name']}"
+                )
+                aggregate_msg["checkpoint_data"] += (
+                    f"{AGGREGATE_DELIMITER}{msg['checkpoint_data']}"
+                )
 
             if aggregate_msg:
                 self._post_request(params=aggregate_msg)
@@ -106,7 +106,6 @@ class GraphApiTraceLoggingService(TraceLoggingService):
         status: CheckpointStatus,
         checkpoint_data: Optional[Dict[str, str]] = None,
     ) -> None:
-
         checkpoint_data = checkpoint_data or {}
         component = checkpoint_data.pop("component", DEFAULT_COMPONENT_NAME)
         scrubbed_checkpoint_data = {}

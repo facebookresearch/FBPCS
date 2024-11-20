@@ -154,7 +154,6 @@ class TestPCF2LiftMetadataCompactionStageService(IsolatedAsyncioTestCase):
         )
 
     def _create_pc_instance(self) -> PrivateComputationInstance:
-
         infra_config: InfraConfig = InfraConfig(
             instance_id="test_instance_123",
             role=PrivateComputationRole.PARTNER,

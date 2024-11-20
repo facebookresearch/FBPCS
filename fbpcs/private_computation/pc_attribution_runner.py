@@ -161,7 +161,6 @@ async def run_attribution_async(
     bolt_hooks: Optional[Dict[BoltHookKey, List[BoltHook[BoltHookArgs]]]] = None,
     stage_timeout_override: Optional[int] = None,
 ) -> BoltSummary:
-
     ## Step 1: Validation. Function arguments and  for private attribution run.
     # obtain the values in the dataset info vector.
     client: BoltGraphAPIClient[BoltPAGraphAPICreateInstanceArgs] = BoltGraphAPIClient(
@@ -251,7 +250,6 @@ async def _run_attribution_async_helper(
     bolt_hooks: Optional[Dict[BoltHookKey, List[BoltHook[BoltHookArgs]]]],
     stage_timeout_override: Optional[int],
 ) -> BoltSummary:
-
     try:
         datasets_info = _get_attribution_dataset_info(client, dataset_id, logger)
     except GraphAPIGenericException as err:
@@ -605,7 +603,6 @@ def get_runnable_timestamps(
     graphapi_version: Optional[str] = None,
     graphapi_domain: Optional[str] = None,
 ) -> Iterable[str]:
-
     client: BoltGraphAPIClient[BoltPAGraphAPICreateInstanceArgs] = BoltGraphAPIClient(
         config=config,
         logger=logger,

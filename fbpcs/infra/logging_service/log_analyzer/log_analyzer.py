@@ -207,7 +207,6 @@ class LogDigest:
         log_line: str,
         parsing_state: Optional[ParsingState],
     ) -> Optional[ParsingState]:
-
         if line_num == 1:
             context = self._parse_line_context(log_line)
             self.run_study.first_log = log_line

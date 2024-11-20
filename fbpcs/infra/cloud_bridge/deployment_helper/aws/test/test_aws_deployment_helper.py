@@ -271,7 +271,6 @@ class TestAwsDeploymentHelper(unittest.TestCase):
             self.aws_deployment_helper.iam.list_users.assert_called_once()
 
     def test_create_access_key(self) -> None:
-
         self.aws_deployment_helper.iam.create_access_key.return_value = {
             "AccessKey": {"AccessKeyId": 1, "SecretAccessKey": 2}
         }

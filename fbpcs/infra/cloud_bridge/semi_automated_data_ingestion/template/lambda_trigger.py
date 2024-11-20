@@ -23,7 +23,6 @@ glueJobName = "TO_BE_UPDATED_DURING_DEPLOYMENT"
 
 # Define Lambda function
 def lambda_handler(event, context):
-
     ### should be one single upload (it should be larger than 1 by default)
     if len(event["Records"]) >= 2:
         logger.info("multiple csv uploaded. please upload only one csv at a time")

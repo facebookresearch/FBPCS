@@ -74,7 +74,6 @@ def _get_md5_hash_of_int(i: int) -> str:
 def _gen_adjusted_purchase_rate(
     is_test: bool, purchase_rate: float, incrementality_rate: float
 ) -> float:
-
     if is_test:
         adj_purchase_rate = purchase_rate + (incrementality_rate / 2.0)
         if adj_purchase_rate > 1.0:
@@ -190,7 +189,6 @@ def _generate_line(
 
 
 def _make_input_csv(args: Dict[str, Any]) -> None:
-
     if args.get("<input_path>") is None:
         header_line = args.get("--from_header").split(",")
         header = [InputColumn.from_str(s) for s in header_line]

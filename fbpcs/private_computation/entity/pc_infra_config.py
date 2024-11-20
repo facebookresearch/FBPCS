@@ -61,9 +61,9 @@ class PrivateComputationInfraConfig:
                 # can handle more than 1 override
                 for dep_key, dep_value in overrides.items():
                     if dep_key in yml_config["private_computation"]["dependency"]:
-                        yml_config["private_computation"]["dependency"][
-                            dep_key
-                        ] = dep_value
+                        yml_config["private_computation"]["dependency"][dep_key] = (
+                            dep_value
+                        )
 
                     elif dep_key in yml_config["mpc"]["dependency"]:
                         yml_config["mpc"]["dependency"][dep_key] = dep_value

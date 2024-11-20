@@ -12,7 +12,6 @@ from fbpcs.common.service.trace_logging_registry import RegistryFactory
 
 
 class DummyRegistry(RegistryFactory[str]):
-
     _REGISTRY: Dict[str, str] = {}
 
     @classmethod
