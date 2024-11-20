@@ -15,7 +15,6 @@
 #include "fbpcs/data_processing/id_combiner/DataPreparationHelpers.h"
 #include "fbpcs/data_processing/id_combiner/DataValidation.h"
 #include "fbpcs/data_processing/id_combiner/GroupBy.h"
-#include "fbpcs/data_processing/id_combiner/IdSwapMultiKey.h"
 #include "fbpcs/data_processing/id_combiner/SortIds.h"
 #include "fbpcs/data_processing/id_combiner/SortIntegralValues.h"
 #include "fbpcs/data_processing/lift_id_combiner/LiftIdSpineCombinerOptions.h"

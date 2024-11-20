@@ -8,23 +8,16 @@
 #include "fbpcs/data_processing/lift_id_combiner/PidLiftIdCombiner.h"
 
 #include <boost/algorithm/string.hpp>
-#include <folly/String.h>
 #include <folly/logging/xlog.h>
-#include <re2/re2.h>
 #include <iomanip>
 #include <istream>
 #include <ostream>
-#include <stdexcept>
 #include <string>
-#include <unordered_map>
 #include <vector>
 
 #include "fbpcf/io/api/BufferedReader.h"
 #include "fbpcf/io/api/FileReader.h"
-#include "fbpcs/data_processing/common/FilepathHelpers.h"
-#include "fbpcs/data_processing/id_combiner/DataPreparationHelpers.h"
 #include "fbpcs/data_processing/id_combiner/IdSwapMultiKey.h"
-#include "fbpcs/data_processing/lift_id_combiner/LiftIdSpineCombinerOptions.h"
 
 namespace pid::combiner {
 PidLiftIdCombiner::PidLiftIdCombiner(

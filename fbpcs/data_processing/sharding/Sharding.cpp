@@ -9,16 +9,12 @@
 
 #include <folly/String.h>
 #include <folly/logging/xlog.h>
-#include <xmmintrin.h>
 
 #include "fbpcs/data_processing/sharding/HashBasedSharder.h"
 #include "fbpcs/data_processing/sharding/RoundRobinBasedSharder.h"
 
 #include "fbpcf/engine/util/AesPrgFactory.h"
-#include "fbpcf/engine/util/util.h"
 #include "fbpcf/mpc_std_lib/util/secureSamplePublicSeed.h"
-#include "fbpcs/data_processing/common/FilepathHelpers.h"
-#include "fbpcs/data_processing/common/Logging.h"
 #include "fbpcs/data_processing/sharding/SecureRandomSharder.h"
 
 namespace data_processing::sharder {

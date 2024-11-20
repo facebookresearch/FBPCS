@@ -7,12 +7,9 @@
 
 #include "fbpcs/data_processing/private_id_dfca_id_combiner/PrivateIdDfcaIdSpineFileCombiner.h"
 
-#include <chrono>
 #include <cstdlib>
-#include <filesystem>
 #include <fstream>
 
-#include <gflags/gflags.h>
 #include <gtest/gtest.h>
 
 #include <folly/Random.h>
