@@ -7,13 +7,9 @@
 
 #include "fbpcs/data_processing/attribution_id_combiner/PidAttributionIdCombiner.h"
 
-#include <folly/String.h>
 #include <folly/logging/xlog.h>
 #include <re2/re2.h>
-#include <iomanip>
 #include <istream>
-#include <stdexcept>
-#include <unordered_map>
 
 #include "fbpcs/data_processing/id_combiner/IdSwapMultiKey.h"
 

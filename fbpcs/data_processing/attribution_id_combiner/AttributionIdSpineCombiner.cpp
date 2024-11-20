@@ -20,12 +20,8 @@
 
 #include <fbpcs/performance_tools/CostEstimation.h>
 #include "fbpcf/io/api/BufferedReader.h"
-#include "fbpcf/io/api/FileIOWrappers.h"
-#include "fbpcf/io/api/FileReader.h"
 #include "fbpcs/data_processing/attribution_id_combiner/AttributionIdSpineCombinerOptions.h"
-#include "fbpcs/data_processing/attribution_id_combiner/AttributionIdSpineCombinerUtil.h"
 #include "fbpcs/data_processing/attribution_id_combiner/AttributionIdSpineFileCombiner.h"
-#include "fbpcs/data_processing/common/FilepathHelpers.h"
 
 int main(int argc, char** argv) {
   folly::init(&argc, &argv);

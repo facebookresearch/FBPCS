@@ -8,11 +8,9 @@
 #include "fbpcs/data_processing/lift_id_combiner/PidLiftIdCombiner.h"
 
 #include <folly/Random.h>
-#include <gflags/gflags.h>
 #include <gtest/gtest.h>
 #include <chrono>
 #include <cstdlib>
-#include <filesystem>
 #include <fstream>
 
 #include "fbpcs/data_processing/lift_id_combiner/LiftIdSpineCombinerOptions.h"

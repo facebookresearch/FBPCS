@@ -14,7 +14,6 @@
 #include <filesystem>
 #include <fstream>
 #include <memory>
-#include <sstream>
 #include <stdexcept>
 #include <string>
 #include <vector>
@@ -31,7 +30,6 @@
 
 #include <folly/DynamicConverter.h>
 #include <folly/json.h>
-#include "fbpcs/data_processing/common/FilepathHelpers.h"
 #include "fbpcs/data_processing/common/Logging.h"
 #include "folly/String.h"
 

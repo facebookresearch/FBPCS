@@ -12,7 +12,6 @@
 #include <fstream>
 #include "fbpcs/data_processing/test_utils/FileIOTestUtils.h"
 
-#include <gflags/gflags.h>
 #include <gtest/gtest.h>
 
 using namespace ::pid::combiner;
