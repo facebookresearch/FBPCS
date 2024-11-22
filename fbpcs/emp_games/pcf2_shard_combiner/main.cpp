@@ -15,7 +15,6 @@
 #include <fbpcf/aws/AwsSdk.h>
 #include <fbpcf/exception/ExceptionBase.h>
 #include <fbpcf/exception/exceptions.h>
-#include <folly/Synchronized.h>
 #include <folly/init/Init.h>
 #include <folly/json.h>
 #include <folly/logging/xlog.h>

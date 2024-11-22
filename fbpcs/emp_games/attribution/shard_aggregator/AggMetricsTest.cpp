@@ -16,7 +16,6 @@
 #include <folly/dynamic.h>
 #include <folly/json.h>
 #include <folly/logging/xlog.h>
-#include <folly/test/JsonTestUtil.h>
 
 #include <fbpcf/io/api/FileIOWrappers.h>
 #include <fbpcs/emp_games/common/TestUtil.h>

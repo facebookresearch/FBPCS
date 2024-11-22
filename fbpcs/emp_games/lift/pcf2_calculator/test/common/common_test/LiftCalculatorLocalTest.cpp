@@ -19,7 +19,6 @@
 #include <gtest/gtest.h>
 
 #include <fbpcf/io/api/FileIOWrappers.h>
-#include <sys/types.h>
 #include "fbpcs/emp_games/common/TestUtil.h"
 #include "fbpcs/emp_games/lift/pcf2_calculator/test/common/LiftCalculator.h"
 

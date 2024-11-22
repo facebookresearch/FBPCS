@@ -7,12 +7,10 @@
 
 #include "ShardAggregatorValidation.h"
 
-#include <set>
 #include <vector>
 
 #include <fbpcf/common/FunctionalUtil.h>
 #include <folly/dynamic.h>
-#include <folly/logging/xlog.h>
 #include <stdexcept>
 
 #include "AggMetrics.h"

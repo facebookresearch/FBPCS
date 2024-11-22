@@ -11,11 +11,8 @@
 #include <fbpcf/scheduler/LazySchedulerFactory.h>
 #include <folly/init/Init.h>
 #include <folly/logging/xlog.h>
-#include <glog/logging.h>
 #include <signal.h>
 #include <filesystem>
-#include <fstream>
-#include <sstream>
 #include <string>
 
 #include "fbpcs/emp_games/common/Constants.h"

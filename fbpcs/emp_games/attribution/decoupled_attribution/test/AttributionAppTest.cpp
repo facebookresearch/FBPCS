@@ -16,7 +16,6 @@
 #include <fbpcf/mpc/EmpGame.h>
 #include "folly/Format.h"
 #include "folly/Random.h"
-#include "folly/logging/xlog.h"
 
 #include "fbpcs/emp_games/attribution/decoupled_attribution/test/AttributionTestUtils.h"
 #include "fbpcs/emp_games/common/TestUtil.h"

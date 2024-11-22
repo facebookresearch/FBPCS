@@ -14,7 +14,6 @@
 #include "folly/dynamic.h"
 
 #include "fbpcs/emp_games/common/EmpOperationUtil.h"
-#include "fbpcs/emp_games/common/PrivateData.h"
 #include "fbpcs/emp_games/common/SecretSharing.h"
 
 #include "fbpcs/emp_games/attribution/decoupled_aggregation/Aggregator.h"

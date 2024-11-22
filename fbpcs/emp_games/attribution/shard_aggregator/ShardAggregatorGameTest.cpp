@@ -15,7 +15,6 @@
 #include <folly/Random.h>
 #include <folly/json.h>
 #include <folly/logging/xlog.h>
-#include <folly/test/JsonTestUtil.h>
 #include <gtest/gtest.h>
 
 #include <fbpcf/io/api/FileIOWrappers.h>
@@ -23,7 +22,6 @@
 #include <fbpcf/mpc/EmpTestUtil.h>
 #include <fbpcf/mpc/QueueIO.h>
 #include "../../common/TestUtil.h"
-#include "ShardAggregatorGame.h"
 #include "fbpcs/emp_games/attribution/shard_aggregator/AggMetricsThresholdCheckers.h"
 
 namespace measurement::private_attribution {

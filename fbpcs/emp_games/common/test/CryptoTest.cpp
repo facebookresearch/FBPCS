@@ -12,10 +12,8 @@
 #include <climits>
 #include <functional>
 #include <random>
-#include <stdexcept>
 
 #include <openssl/conf.h>
-#include <openssl/err.h>
 #include <openssl/evp.h>
 
 #include <folly/ssl/OpenSSLPtrTypes.h>

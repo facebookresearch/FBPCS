@@ -14,7 +14,6 @@
 #include "folly/json.h"
 
 #include <fbpcf/common/FunctionalUtil.h>
-#include <fbpcf/common/VectorUtil.h>
 
 namespace private_lift {
 bool LiftMetrics::operator==(const LiftMetrics& other) const noexcept {

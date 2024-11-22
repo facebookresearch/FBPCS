@@ -6,10 +6,8 @@
  */
 
 #include "LiftCalculator.h"
-#include <gflags/gflags.h>
 #include <fstream>
 #include <iomanip>
-#include <map>
 #include <sstream>
 #include <unordered_map>
 #include <vector>

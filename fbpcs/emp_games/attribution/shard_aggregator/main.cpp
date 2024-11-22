@@ -6,7 +6,6 @@
  */
 
 #include <filesystem>
-#include <stdexcept>
 
 #include <gflags/gflags.h>
 
@@ -17,7 +16,6 @@
 #include <fbpcf/exception/ExceptionBase.h>
 #include <fbpcs/performance_tools/CostEstimation.h>
 #include <signal.h>
-#include "MainUtil.h"
 #include "ShardAggregatorApp.h"
 
 DEFINE_int32(party, 1, "1 = publisher, 2 = partner");

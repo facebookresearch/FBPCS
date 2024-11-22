@@ -8,7 +8,6 @@
 #include <re2/re2.h>
 #include <filesystem>
 #include <fstream>
-#include <map>
 #include <unordered_set>
 
 #include "fbpcs/emp_games/common/Constants.h"
