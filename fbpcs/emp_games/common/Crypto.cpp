@@ -7,10 +7,7 @@
 
 #include "fbpcs/emp_games/common/Crypto.h"
 
-#include <openssl/conf.h>
-#include <openssl/err.h>
 #include <openssl/evp.h>
-#include <stdexcept>
 
 namespace private_measurement::crypto {
 

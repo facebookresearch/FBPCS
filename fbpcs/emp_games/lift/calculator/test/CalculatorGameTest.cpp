@@ -23,7 +23,6 @@
 #include "../CalculatorGame.h"
 #include "../CalculatorGameConfig.h"
 #include "../InputData.h"
-#include "../OutputMetrics.h"
 #include "common/GenFakeData.h"
 #include "common/LiftCalculator.h"
 

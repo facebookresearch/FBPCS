@@ -8,7 +8,6 @@
 #include <folly/init/Init.h>
 #include <folly/logging/xlog.h>
 #include <glog/logging.h>
-#include <signal.h>
 #include <filesystem>
 #include <fstream>
 #include <sstream>

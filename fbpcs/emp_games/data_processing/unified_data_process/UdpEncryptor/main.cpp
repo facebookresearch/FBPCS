@@ -15,7 +15,6 @@
 #include "fbpcf/engine/communication/SocketPartyCommunicationAgentFactory.h"
 #include "fbpcs/emp_games/common/FeatureFlagUtil.h"
 #include "fbpcs/performance_tools/CostEstimation.h"
-#include "folly/String.h"
 #include "folly/init/Init.h"
 #include "folly/logging/xlog.h"
 

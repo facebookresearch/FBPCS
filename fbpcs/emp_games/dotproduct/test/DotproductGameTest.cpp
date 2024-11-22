@@ -15,7 +15,6 @@
 #include "folly/logging/xlog.h"
 
 #include "fbpcf/engine/communication/SocketPartyCommunicationAgentFactory.h"
-#include "fbpcf/engine/communication/test/SocketInTestHelper.h"
 #include "fbpcf/engine/communication/test/TlsCommunicationUtils.h"
 #include "fbpcf/scheduler/SchedulerHelper.h"
 #include "fbpcf/test/TestHelper.h"

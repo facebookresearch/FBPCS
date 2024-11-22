@@ -14,7 +14,6 @@
 #include <string>
 
 #include <re2/re2.h>
-#include <unordered_map>
 #include <utility>
 #include <vector>
 

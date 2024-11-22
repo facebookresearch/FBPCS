@@ -11,8 +11,6 @@
 #include "fbpcf/mpc_std_lib/oram/DifferenceCalculatorFactory.h"
 #include "fbpcf/mpc_std_lib/oram/LinearOramFactory.h"
 #include "fbpcf/mpc_std_lib/oram/ObliviousDeltaCalculatorFactory.h"
-#include "fbpcf/mpc_std_lib/oram/SinglePointArrayGeneratorFactory.h"
-#include "fbpcf/mpc_std_lib/oram/WriteOnlyOramFactory.h"
 #include "fbpcs/emp_games/he_aggregation/AttributionAdditiveSSResult.h"
 #include "fbpcs/emp_games/he_aggregation/HEAggOptions.h"
 

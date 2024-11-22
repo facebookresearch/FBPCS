@@ -10,7 +10,6 @@
 #include <fbpcf/io/api/BufferedReader.h>
 #include <fbpcf/io/api/BufferedWriter.h>
 #include <fbpcf/io/api/FileReader.h>
-#include <fbpcf/io/api/FileWriter.h>
 #include <cstdint>
 #include <iterator>
 #include <string>

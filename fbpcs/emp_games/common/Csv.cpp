@@ -15,7 +15,6 @@
 #include "fbpcf/io/api/FileReader.h"
 #include "fbpcf/io/api/FileWriter.h"
 
-#include "Constants.h"
 #include "Csv.h"
 
 namespace private_measurement::csv {

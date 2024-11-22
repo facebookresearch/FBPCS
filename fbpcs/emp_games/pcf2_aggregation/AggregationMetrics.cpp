@@ -14,7 +14,6 @@
 #include <string>
 
 #include <re2/re2.h>
-#include <unordered_map>
 #include <utility>
 #include <vector>
 
@@ -26,9 +25,7 @@
 #include "fbpcs/emp_games/common/Constants.h"
 #include "fbpcs/emp_games/common/Util.h"
 #include "fbpcs/emp_games/pcf2_aggregation/AggregationMetrics.h"
-#include "fbpcs/emp_games/pcf2_aggregation/AggregationOptions.h"
 #include "fbpcs/emp_games/pcf2_aggregation/AttributionResult.h"
-#include "fbpcs/emp_games/pcf2_aggregation/Constants.h"
 #include "fbpcs/emp_games/pcf2_aggregation/ConversionMetadata.h"
 #include "fbpcs/emp_games/pcf2_aggregation/TouchpointMetadata.h"
 

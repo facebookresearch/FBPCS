@@ -21,7 +21,6 @@
 #include "fbpcf/engine/communication/InMemoryPartyCommunicationAgentFactory.h"
 #include "fbpcf/engine/communication/test/AgentFactoryCreationHelper.h"
 #include "fbpcf/scheduler/PlaintextScheduler.h"
-#include "fbpcf/scheduler/SchedulerHelper.h"
 #include "fbpcf/test/TestHelper.h"
 #include "fbpcs/emp_games/common/TestUtil.h"
 #include "fbpcs/emp_games/he_aggregation/AggregationInputMetrics.h"

@@ -11,7 +11,6 @@
 #include <gtest/gtest.h>
 #include <functional>
 #include <memory>
-#include <optional>
 #include "folly/Random.h"
 
 using namespace ::testing;

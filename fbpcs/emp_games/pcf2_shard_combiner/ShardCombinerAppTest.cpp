@@ -18,7 +18,6 @@
 #include <folly/json.h>
 
 #include <fbpcf/engine/communication/SocketPartyCommunicationAgentFactory.h>
-#include <fbpcf/engine/communication/test/SocketInTestHelper.h>
 #include <fbpcf/engine/communication/test/TlsCommunicationUtils.h>
 #include <fbpcf/io/api/FileIOWrappers.h>
 #include "fbpcf/engine/communication/test/AgentFactoryCreationHelper.h"
